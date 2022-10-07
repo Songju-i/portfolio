@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+ol, ul {list-style: none;}
+a {text-decoration: none; color:inherit;}
+img {border: 0; display: block;}
+body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
+
+div#wrap {width: 100%;}
+
+div#header {width: 1280px; height: 1080px; margin: 0 auto; }
+div#header::after {content: ""; display: block; clear: both;}
+
+div.header_in {width: 1280px; height: 100px; position: relative; float: left; background-color: blue;}
+div.header_in > ul {width: 400px; height: 30px; position: absolute; top: 10px; right: 10px;}
+div.header_in > ul > li {width: 80px; height: 30px; color: white; text-align: center; line-height: 30px; float: left; font-size: 12px;}
+div.header_in > ul > li > a {display: block;}
+div.header_in > ul > li:hover > a {background-color: cyan; color: black; border-radius: 5px;} 
+
+div.content {width: 1280px; height: 100px; background-color: black; float: left; position: relative;}
+div.content > h2 {width: 260px; height: 100px; font-size: 40px; text-align: center; line-height: 100px; color: white; font-weight: 600; float: left;}
+div.content > div.box1 {width: 900px; height: 50px; float: right; position: absolute; top: 0; right: 30px;}
+div.content > div.box1 > input {display: block; width: 300px; height: 30px; float: right; position: relative; top: 10px; right: 80px;}
+div.content > div.box1 > span::after {content: url(../img/icon_1.png); width: 22px; height: 22px; position: absolute; top: 14px; right: 125px;}
+div.content > div.box1 > span::before {content: url(../img/icon_2.png); width: 22px; height: 22px; position: absolute; top: 13px; right: 90px;}
+div.content > div.box1 > a > i {width: 30px; height: 30px; font-size: 28px; color: white; position: absolute; top: 9px; right: 30px; text-align: center; line-height: 30px;}
+div.content > div.box2 {width: 900px; height: 50px; float: right; right: 30px; position: absolute; bottom: 0; right: 30px;}
+div.content > div.box2 > ul {width: 630px; height: 50px; float: right;}
+div.content > div.box2 > ul > li {width: 70px; height: 50px; float: left; color: white; text-align: center; line-height: 50px;}
+div.content > div.box2 > ul > li:hover > a {color: cyan; font-weight: 700;}
+
+div.main {width: 1280px; height: 880px; float: left;}
+div.main > div.gnb {width: 260px; height: 880px; float: left;background-color: black; position: relative;}
+div.main > div.gnb > button {width: 200px; height: 40px; position: absolute; top: 30px; left: 30px; background-color: #fff; border-radius: 50px;}
+div.main > div.gnb > ul.menu {width: 260px; position: absolute; top: 100px; left: 0;}
+div.main > div.gnb > ul.menu > li {width: 260px; height: 40px; color: #fff; border-bottom: 1px solid #fff; line-height: 40px; position: relative;}
+div.main > div.gnb > ul.menu > li > a {display: block; padding-left: 30px; box-sizing: border-box;}
+div.main > div.gnb > ul.menu > li > a > span {position: absolute; top: 0; right: 30px;}
+div.main > div.gnb > ul.menu > li:hover > a {font-weight: 600; color: #fff;}
+div.main > div.gnb > ul.menu > li > ul {display: none; width: 200px; position: absolute; top: 0; left: 260px; background-color: black; z-index: 15;}
+div.main > div.gnb > ul.menu > li > ul > li {width: 200px; height: 40px; text-align: center; line-height: 40px;}
+div.main > div.gnb > ul.menu > li > ul > li > a {display: block;}
+div.main > div.gnb > ul.menu > li > ul > li:hover a {font-weight: 600; background-color: #b2b9c1; color: #fff;}
+
+div.main > div.main_slide {width: 1020px; height: 530px; float: left; }
+div.main > div.main_slide > ul {width: 1020px; height: 530px; overflow: hidden; position: relative;}
+div.main > div.main_slide > ul > li {width: 1020px; height: 530px; float: right; position: absolute; top: 0; left: 0;}
+div.main > div.main_slide > ul > li.viwe {z-index: 1;}
+
+div.swiper_all_wrap {width: 1020px; height: 300px; position: relative; float: left; padding-top: 34px; box-sizing: border-box; margin-top: 30px;}
+div.swiper {width: 900px; height: 213px;}
+
+div#figure1 {width: 1280px; margin: 0 auto;}
+div#figure1 div.box {width: 1280px; height: 140px; background-color: black; margin-top: 60px; position: relative;}
+div#figure1 div.box h2 {width: 800px; height: 70px; text-align: center; line-height: 70px; color: yellow; font-weight: 500; position: absolute; top: 36px; left: 220px; font-size: 50px;}
+div#figure1 div.sub_menu {width: 1280px; height: 30px;}
+div#figure1 div.sub_menu > ul {width: 550px; height: 30px; margin: 0 auto;}
+div#figure1 div.sub_menu > ul > li {height: 30px; float: left; text-align: center; line-height: 30px; margin-left: 2px;}
+div#figure1 div.sub_menu > ul > li > a:hover, div.sub_menu > ul > li > a.active  {color: blue; font-weight: 500;}
+
+div#figure1 div.top {width: 1280px; height: 850px;}
+div#figure1 div.top > div#all {width: 1120px; height: 850px;  margin: 0 auto; position: relative;}
+div#figure1 div.top > div#all > div {width: 200px; height: 350px; float: left; margin: 0 auto;}
+div#figure1 div.top > div#all > div > a > img {width: 150px; margin: 0 auto;}
+div#figure1 div.top > div#all > div > a > h2 {font-size: 60px; float: left; width: 40px;}
+div#figure1 div.top > div#all > div.best0 > a > h2 {font-size: 60px; float: left; width: 80px;}
+div#figure1 div.top > div#all > div > a > h5 {font-size: 16px; float: left; width: 120px; padding-top: 30px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#all > div > a > span {font-size: 14px; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#all > div > a > span.money {font-size: 15px; font-weight: 700; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+
+div#figure1 div.top > div#all > div.best1 {position: absolute; top: 50px; left: 0; z-index: 13;}
+div#figure1 div.top > div#all > div.best2 {position: absolute; top: 50px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#all > div.best3 {position: absolute; top: 50px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#all > div.best4 {position: absolute; top: 50px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#all > div.best5 {position: absolute; top: 50px; left: 920px; z-index: 13;}
+div#figure1 div.top > div#all > div.best6 {position: absolute; top: 450px; left: 0; z-index: 13;}
+div#figure1 div.top > div#all > div.best7 {position: absolute; top: 450px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#all > div.best8 {position: absolute; top: 450px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#all > div.best9 {position: absolute; top: 450px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#all > div.best0 {position: absolute; top: 450px; left: 920px; z-index: 13;}
+
+div#figure1 div.top > div#t-shirt {width: 1120px; height: 850px;  margin: 0 auto; position: relative; display: none;}
+div#figure1 div.top > div#t-shirt > div {width: 200px; height: 350px; float: left; margin: 0 auto;}
+div#figure1 div.top > div#t-shirt > div > a > img {width: 150px; margin: 0 auto;}
+div#figure1 div.top > div#t-shirt > div > a > h2 {font-size: 60px; float: left; width: 40px;}
+div#figure1 div.top > div#t-shirt > div.t-shirt0 > a > h2 {font-size: 60px; float: left; width: 80px;}
+div#figure1 div.top > div#t-shirt > div > a > h5 {font-size: 16px; float: left; width: 120px; padding-top: 30px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#t-shirt > div > a > span {font-size: 14px; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#t-shirt > div > a > span.money {font-size: 15px; font-weight: 700; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+
+div#figure1 div.top > div#t-shirt > div.t-shirt1 {position: absolute; top: 50px; left: 0; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt2 {position: absolute; top: 50px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt3 {position: absolute; top: 50px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt4 {position: absolute; top: 50px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt5 {position: absolute; top: 50px; left: 920px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt6 {position: absolute; top: 450px; left: 0; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt7 {position: absolute; top: 450px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt8 {position: absolute; top: 450px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt9 {position: absolute; top: 450px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#t-shirt > div.t-shirt0 {position: absolute; top: 450px; left: 920px; z-index: 13;}
+
+div#figure1 div.top > div#bag {width: 1120px; height: 850px;  margin: 0 auto; position: relative; display: none;}
+div#figure1 div.top > div#bag > div {width: 200px; height: 350px; float: left; margin: 0 auto;}
+div#figure1 div.top > div#bag > div > a > img {width: 150px; margin: 0 auto;}
+div#figure1 div.top > div#bag > div > a > h2 {font-size: 60px; float: left; width: 40px;}
+div#figure1 div.top > div#bag > div.bag0 > a > h2 {font-size: 60px; float: left; width: 80px;}
+div#figure1 div.top > div#bag > div > a > h5 {font-size: 16px; float: left; width: 120px; padding-top: 30px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#bag > div > a > span {font-size: 14px; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#bag > div > a > span.money {font-size: 15px; font-weight: 700; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+
+div#figure1 div.top > div#bag > div.bag1 {position: absolute; top: 50px; left: 0; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag2 {position: absolute; top: 50px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag3 {position: absolute; top: 50px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag4 {position: absolute; top: 50px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag5 {position: absolute; top: 50px; left: 920px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag6 {position: absolute; top: 450px; left: 0; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag7 {position: absolute; top: 450px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag8 {position: absolute; top: 450px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag9 {position: absolute; top: 450px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#bag > div.bag0 {position: absolute; top: 450px; left: 920px; z-index: 13;}
+
+div#figure1 div.top > div#jewelry {width: 1120px; height: 850px;  margin: 0 auto; position: relative; display: none;}
+div#figure1 div.top > div#jewelry > div {width: 200px; height: 350px; float: left; margin: 0 auto;}
+div#figure1 div.top > div#jewelry > div > a > img {width: 150px; margin: 0 auto;}
+div#figure1 div.top > div#jewelry > div > a > h2 {font-size: 60px; float: left; width: 40px;}
+div#figure1 div.top > div#jewelry > div.jewelry0 > a > h2 {font-size: 60px; float: left; width: 80px;}
+div#figure1 div.top > div#jewelry > div > a > h5 {font-size: 16px; float: left; width: 120px; padding-top: 30px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#jewelry > div > a > span {font-size: 14px; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+div#figure1 div.top > div#jewelry > div > a > span.money {font-size: 15px; font-weight: 700; float: left; width: 120px; padding-left: 10px; box-sizing: border-box;}
+
+div#figure1 div.top > div#jewelry > div.bag1 {position: absolute; top: 50px; left: 0; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.bag2 {position: absolute; top: 50px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry3 {position: absolute; top: 50px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry4 {position: absolute; top: 50px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry5 {position: absolute; top: 50px; left: 920px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry6 {position: absolute; top: 450px; left: 0; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry7 {position: absolute; top: 450px; left: 230px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry8 {position: absolute; top: 450px; left: 460px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry9 {position: absolute; top: 450px; left: 690px; z-index: 13;}
+div#figure1 div.top > div#jewelry > div.jewelry0 {position: absolute; top: 450px; left: 920px; z-index: 13;}
+
+div#figure2 {width: 1280px; margin: 0 auto;}
+div#figure2 div.box_g1 {width: 1280px; height: 440px; background: linear-gradient(45deg, #FAB4FF, #A3FAFE); position: relative;}
+div#figure2 div.box_g1 img {height: 420px; position: absolute; bottom: 0; right: 130px;}
+div#figure2 div.box_g1 h2 {font-size: 130px; line-height: .8; letter-spacing: -7px; position: absolute; top: 110px; left: 50px; color: rgba(255, 255, 255, .5);}
+div#figure2 div.box_g1 p {position: absolute; font-size: 13px; top: 195px; left: 370px; z-index: 1;}
+div#figure2 div.box_g2 {width: 1280px; height: 440px; background-color: #b2b9c1; position: relative;}
+div#figure2 div.box_g2 img {height: 440px; position: absolute; bottom: 0; left: 0;}
+div#figure2 div.box_g2 h2 {font-size: 160px; line-height: .8;  position: absolute; top: 90px; right: 50px; color: rgba(255, 255, 255, .5);}
+
+div#figure3 {width: 1280px; height: 1080px; margin: 0 auto;}
+
+div.foot_bar {width: 1280px; height: 150px; position: relative; background-color: beige;}
+div.foot_bar h3 {width: 1280px; height: 150px; padding-top: 65px; padding-left: 100px; box-sizing: border-box; font-size: 20px;}
+
+.foot_bar > div {width: 350px; height: 830px; float: left; margin-left: 55px; box-sizing: border-box; padding-top: 100px;}
+.foot_bar > div > h6 {font-size: 14px; padding-bottom: 15px;}
+.foot_bar > div > p {font-size: 14px; padding: 15px;}
+.foot_bar > div > p > span.star {color: rgb(246, 209, 1);}
+.foot_bar > div > ul {width: 330px; height: 25px; margin: 0 auto;}
+.foot_bar > div > ul > li {width: 100px; height: 20px; outline: 1px solid gray; border-radius: 50px; float: left; font-size: 11px; text-align: center; list-style: 20px; color: grey;}
+.foot_bar > div > ul > li:not(:first-child) {margin-left: 15px;}
+.foot_bar > div > ul > li > span {color: black; font-weight: 400;}
+.foot_bar > div > p {font-size: 14px;}
+
+div.foot {width: 1280px; height: 200px; margin: 0 auto;}
+div.foot img {width: 1280px; height: 200px;}

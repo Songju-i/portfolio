@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-1.12.3.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/custom.js"defer></script>  
+  <title>musinsa</title>
+</head>
+<body>
+  <div id="wrap">
+
+    <div id="header">      
+      <div class="header_in">
+        <ul>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">최근 본 상품</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">주문배송조회</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </div>
+      
+      <div class="content">
+        <h2><a href="#">MUSINSA</a></h2>
+        <div class="box1">
+          <input type="text"><span></span>
+          <a href="#"><i class="fa fa-navicon"></i></a>
+        </div>
+        <div class="box2">
+          <ul>
+            <li><a href="#">랭킹</a></li>
+            <li><a href="#">업데이트</a></li>
+            <li><a href="#">코디</a></li>
+            <li><a href="#">세일</a></li>
+            <li><a href="#">스페셜</a></li>
+            <li><a href="#">매거진</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">브랜드</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="main">
+        <div class="gnb">
+          <button>Loging</button>
+          <ul class="menu">
+            <li><a href="#">상의<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">반소매</a></li>
+                <li><a href="#">긴소매</a></li>
+                <li><a href="#">민소매</a></li>
+                <li><a href="#">후드티</a></li>
+              </ul>
+            </li>
+            <li><a href="#">아우터<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">후드 집업</a></li>
+                <li><a href="#">환절기 코트</a></li>
+                <li><a href="#">패딩</a></li>
+                <li><a href="#">카디건</a></li>
+              </ul>
+            </li>
+            <li><a href="#">바지<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">숏팬츠</a></li>
+                <li><a href="#">점프 슈트</a></li>
+                <li><a href="#">트레이닝</a></li>
+                <li><a href="#">레깅스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">원피스<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">미니 원피스</a></li>
+                <li><a href="#">미디 원피스</a></li>
+                <li><a href="#">멕시 원피스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">스커트<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">미니 스커트</a></li>
+                <li><a href="#">미디 스커트</a></li>
+                <li><a href="#">롱 스커트</a></li>
+              </ul>
+            </li>
+            <li><a href="#">신발<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">구두</a></li>
+                <li><a href="#">슬리퍼</a></li>
+                <li><a href="#">로퍼</a></li>
+                <li><a href="#">플렛 슈즈</a></li>
+              </ul>
+            </li>
+            <li><a href="#">가방<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">백팩</a></li>
+                <li><a href="#">숄더백</a></li>
+                <li><a href="#">에코백</a></li>
+                <li><a href="#">보스턴백</a></li>
+              </ul>
+            </li>
+            <li><a href="#">모자<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">캡/야구 모자</a></li>
+                <li><a href="#">베레모</a></li>
+                <li><a href="#">페도라</a></li>
+                <li><a href="#">비니</a></li>
+              </ul>
+            </li>
+            <li><a href="#">시계<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">디지털</a></li>
+                <li><a href="#">쿼츠 아날로그</a></li>
+                <li><a href="#">오토매틱 아날로그</a></li>
+                <li><a href="#">시계용품</a></li>
+              </ul>
+            </li>
+            <li><a href="#">악세사리<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">머플러</a></li>
+                <li><a href="#">벨트</a></li>
+                <li><a href="#">넥타이</a></li>
+                <li><a href="#">키링/키케이스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">주얼리<span>+</span></a>
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">반지</a></li>
+                <li><a href="#">팔찌</a></li>
+                <li><a href="#">목걸이</a></li>
+                <li><a href="#">귀걸이</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="main_slide">
+          <ul>
+            <li class="viwe"><a href="#"><img src="img/main01.jpg" alt="main_slide1"></img></li>
+            <li><a href="#"><img src="img/main02.jpg" alt="main_slide2"></img></li>
+            <li><a href="#"><img src="img/main03.jpg" alt="main_slide2"></img></li>
+          </ul>
+        </div>
+
+        <div class="swiper_all_wrap">
+          <div class="swiper">
+            <div class="swiper-wrapper slide-wrap">
+              <div class="swiper-slide">
+                <img src="img/main11.jpg" alt="img1">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main12.jpg" alt="img2">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main13.jpg" alt="img3">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main14.jpg" alt="img4">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main15.jpg" alt="img5">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main16.jpg" alt="img5">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div> <!--header end-->
+
+    <div id="figure1">
+      <div class="box"><h2>실시간 브랜드 랭킹</h2></div>
+      <div class="sub_menu">
+        <ul>
+          <li><a href="#all" class="active">전체</a> /</li>
+          <li><a href="#t-shirt">상의</a> /</li>
+          <li><a href="#auter">아우터</a> /</li>
+          <li><a href="#pants">바지</a> /</li>
+          <li><a href="#onepiece">원피스</a> /</li>
+          <li><a href="#skirt">스커트</a> /</li>
+          <li><a href="#shoes">신발</a> /</li>
+          <li><a href="#bag">가방</a> /</li>
+          <li><a href="#hat">모자</a> /</li>
+          <li><a href="#accessory">악세서리</a> /</li>
+          <li><a href="#jewelry">주얼리</a></li>
+        </ul>
+      </div>
+
+      <div class="top">
+
+        <div id="all">          
+          <div class="best1">
+            <a href="#">
+            <img src="img/sub10.jpg" alt="best1">
+            <h2>1</h2>
+            <h5>야마하골프</h5>
+            <span class="name">CS HM+ 여성...</span>
+            <span class="money">1,600,000원</span>
+            </a>
+          </div>
+          <div class="best2">
+            <a href="#">
+              <img src="img/sub11.jpg" alt="best2">
+              <h2>2</h2>
+              <h5>아디다스</h5>
+              <span class="name">레이싱 1 그레이...</span>
+              <span class="money">39,900원</span>
+            </a>
+          </div>
+          <div class="best3">
+            <a href="#">
+              <img src="img/sub12.jpg" alt="best3">
+              <h2>3</h2>
+              <h5>뉴발란스</h5>
+              <span class="name">NBPACF710Z /...</span>
+              <span class="money">139,000원</span>
+            </div>
+            </a>
+          <div class="best4">
+            <a href="#">
+              <img src="img/sub13.jpg" alt="best4">
+              <h2>4</h2>
+              <h5>파브레가</h5>
+              <span class="name">가먼트 워싱 블루...</span>
+              <span class="money">166,600원</span>
+            </div>
+            </a>
+          <div class="best5">
+            <a href="#">
+              <img src="img/sub14.jpg" alt="best5">
+              <h2>5</h2>
+              <h5>코드그라피</h5>
+              <span class="name">[set] 맨투맨...</span>
+              <span class="money">69,900원</span>
+            </a>
+          </div>
+          <div class="best6">
+            <a href="#">
+              <img src="img/sub15.jpg" alt="best6">
+              <h2>6</h2>
+              <h5>발렌시아가</h5>
+              <span class="name">여성 스몰 카바스...</span>
+              <span class="money">890,000원</span>
+            </a>
+          </div>
+          <div class="best7">
+            <a href="#">
+              <img src="img/sub16.jpg" alt="best7">
+              <h2>7</h2>
+              <h5>반스</h5>
+              <span class="name">스타일 36 데콘...</span>
+              <span class="money">39,900원</span>
+            </a>
+          </div>
+          <div class="best8">
+            <a href="#">
+              <img src="img/sub17.jpg" alt="best8">
+              <h2>8</h2>
+              <h5>우포스</h5>
+              <span class="name">OORIGINAL BL...</span>
+              <span class="money">62,000원</span>
+            </div>
+            </a>
+          <div class="best9">
+            <a href="#">
+              <img src="img/sub18.jpg" alt="best9">
+              <h2>9</h2>
+              <h5>마뗑킴</h5>
+              <span class="name">MATIN KIM...</span>
+              <span class="money">143,000원</span>
+            </div>
+            </a>
+          <div class="best0">
+            <a href="#">
+              <img src="img/sub19.jpg" alt="best10">
+              <h2>10</h2>
+              <h5>파브레가</h5>
+              <span class="name">코팅 윈드브레...</span>
+              <span class="money">130,200원</span>
+            </div>
+            </a>
+        </div>
+
+        <div id="t-shirt">          
+          <div class="t-shirt1">
+            <a href="#">
+            <img src="img/sub41.jpg" alt="t-shirt1">
+            <h2>1</h2>
+            <h5>세터</h5>
+            <span class="name">더블린 언발..</span>
+            <span class="money">143,650원</span>
+            </a>
+          </div>
+          <div class="t-shirt2">
+            <a href="#">
+              <img src="img/sub42.jpg" alt="t-shirt2">
+              <h2>2</h2>
+              <h5>소버먼트</h5>
+              <span class="name">980g pigm...</span>
+              <span class="money">47,600원</span>
+            </a>
+          </div>
+          <div class="t-shirt3">
+            <a href="#">
+              <img src="img/sub43.jpg" alt="t-shirt3">
+              <h2>3</h2>
+              <h5>발렌시아가</h5>
+              <span class="name">남성 B 어센...</span>
+              <span class="money">870,000원</span>
+            </div>
+            </a>
+          <div class="t-shirt4">
+            <a href="#">
+              <img src="img/sub44.jpg" alt="t-shirt4">
+              <h2>4</h2>
+              <h5>리</h5>
+              <span class="name">빅 트위치 루...</span>
+              <span class="money">71,100원</span>
+            </div>
+            </a>
+          <div class="t-shirt5">
+            <a href="#">
+              <img src="img/sub45.jpg" alt="t-shirt5">
+              <h2>5</h2>
+              <h5>예일</h5>
+              <span class="name">(22FW) 2 TONE...</span>
+              <span class="money">71,100원</span>
+            </a>
+          </div>
+          <div class="t-shirt6">
+            <a href="#">
+              <img src="img/sub46.jpg" alt="t-shirt6">
+              <h2>6</h2>
+              <h5>폴로 랄프 로렌</h5>
+              <span class="name">케이블미트 코트..</span>
+              <span class="money">239,000원</span>
+            </a>
+          </div>
+          <div class="t-shirt7">
+            <a href="#">
+              <img src="img/sub47.jpg" alt="t-shirt7">
+              <h2>7</h2>
+              <h5>디스이즈네버댓</h5>
+              <span class="name">Arch-Logo H...</span>
+              <span class="money">89,000원</span>
+            </a>
+          </div>
+          <div class="t-shirt8">
+            <a href="#">
+              <img src="img/sub48.jpg" alt="t-shirt8">
+              <h2>8</h2>
+              <h5>예일</h5>
+              <span class="name">(22FW) 2 TONE...</span>
+              <span class="money">71,100원</span>
+            </div>
+            </a>
+          <div class="t-shirt9">
+            <a href="#">
+              <img src="img/sub49.jpg" alt="t-shirt9">
+              <h2>9</h2>
+              <h5>어반드레스</h5>
+              <span class="name">UNISEX LAUR...</span>
+              <span class="money">34,500원</span>
+            </div>
+            </a>
+          <div class="t-shirt0">
+            <a href="#">
+              <img src="img/sub40.jpg" alt="t-shirt10">
+              <h2>10</h2>
+              <h5>퍼스텝</h5>
+              <span class="name">뉴필 후드...</span>
+              <span class="money">46,400원</span>
+            </div>
+            </a>
+        </div>
+
+        <div id="auter"></div>
+        <div id="pants"></div>
+        <div id="onepiece"></div>
+        <div id="skirt"></div>
+        <div id="shoes"></div>
+
+        <div id="bag">          
+          <div class="bag1">
+            <a href="#">
+            <img src="img/sub51.jpg" alt="bag1">
+            <h2>1</h2>
+            <h5>세터</h5>
+            <span class="name">누오르 3Wa...</span>
+            <span class="money">224,100원</span>
+            </a>
+          </div>
+          <div class="bag2">
+            <a href="#">
+              <img src="img/sub52.jpg" alt="bag2">
+              <h2>2</h2>
+              <h5>마땡킴</h5>
+              <span class="name">QUILTING...</span>
+              <span class="money">85,000원</span>
+            </a>
+          </div>
+          <div class="bag3">
+            <a href="#">
+              <img src="img/sub53.jpg" alt="bag3">
+              <h2>3</h2>
+              <h5>써네이</h5>
+              <span class="name">공용 패럴레피..</span>
+              <span class="money">945,000원</span>
+            </div>
+            </a>
+          <div class="bag4">
+            <a href="#">
+              <img src="img/sub54.jpg" alt="bag4">
+              <h2>4</h2>
+              <h5>스탠드오일</h5>
+              <span class="name">Oblong bag...</span>
+              <span class="money">119,000원</span>
+            </div>
+            </a>
+          <div class="bag5">
+            <a href="#">
+              <img src="img/sub55.jpg" alt="bag5">
+              <h2>5</h2>
+              <h5>마땡킴</h5>
+              <span class="name">QUILTING...</span>
+              <span class="money">85,000원</span>
+            </a>
+          </div>
+          <div class="bag6">
+            <a href="#">
+              <img src="img/sub56.jpg" alt="bag6">
+              <h2>6</h2>
+              <h5>스탠드오일</h5>
+              <span class="name">Oblong bag...</span>
+              <span class="money">96,000원</span>
+            </a>
+          </div>
+          <div class="bag7">
+            <a href="#">
+              <img src="img/sub57.jpg" alt="bag7">
+              <h2>7</h2>
+              <h5>아카이브앱크</h5>
+              <span class="name">eternal teen...</span>
+              <span class="money">419,000원</span>
+            </a>
+          </div>
+          <div class="bag8">
+            <a href="#">
+              <img src="img/sub58.jpg" alt="bag8">
+              <h2>8</h2>
+              <h5>리멤버제인</h5>
+              <span class="name">클래식 시그니...</span>
+              <span class="money">331,100원</span>
+            </div>
+            </a>
+          <div class="bag9">
+            <a href="#">
+              <img src="img/sub59.jpg" alt="bag9">
+              <h2>9</h2>
+              <h5>스탠드오일</h5>
+              <span class="name">Butter bag...</span>
+              <span class="money">96,000원</span>
+            </div>
+            </a>
+          <div class="bag0">
+            <a href="#">
+              <img src="img/sub50.jpg" alt="bag10">
+              <h2>10</h2>
+              <h5>마땡킴</h5>
+              <span class="name">QUILTING...</span>
+              <span class="money">85,000원</span>
+            </div>
+            </a>
+        </div>
+
+        <div id="hat"></div>
+        <div id="accessory"></div>
+
+        <div id="jewelry">          
+          <div class="jewelry1">
+            <a href="#">
+            <img src="img/sub61.jpg" alt="jewelry1">
+            <h2>1</h2>
+            <h5>제이에스티나</h5>
+            <span class="name">J Basic 14K...</span>
+            <span class="money">144,500원</span>
+            </a>
+          </div>
+          <div class="jewelry2">
+            <a href="#">
+              <img src="img/sub62.jpg" alt="jewelry2">
+              <h2>2</h2>
+              <h5>리얼리즘</h5>
+              <span class="name">실버 콤비 트위...</span>
+              <span class="money">108,000원</span>
+            </a>
+          </div>
+          <div class="jewelry3">
+            <a href="#">
+              <img src="img/sub63.jpg" alt="jewelry3">
+              <h2>3</h2>
+              <h5>뮤제아르</h5>
+              <span class="name">하트 버터플라이..</span>
+              <span class="money">184,500원</span>
+            </div>
+            </a>
+          <div class="jewelry4">
+            <a href="#">
+              <img src="img/sub64.jpg" alt="jewelry4">
+              <h2>4</h2>
+              <h5>쇼브오프</h5>
+              <span class="name">[실버 925]...</span>
+              <span class="money">26,000원</span>
+            </div>
+            </a>
+          <div class="jewelry5">
+            <a href="#">
+              <img src="img/sub65.jpg" alt="jewelry5">
+              <h2>5</h2>
+              <h5>로이드</h5>
+              <span class="name">디펜드 스톤...</span>
+              <span class="money">229,000원</span>
+            </a>
+          </div>
+          <div class="jewelry6">
+            <a href="#">
+              <img src="img/sub66.jpg" alt="jewelry6">
+              <h2>6</h2>
+              <h5>뮤제아르</h5>
+              <span class="name">하트 스타문...</span>
+              <span class="money">107,500원</span>
+            </a>
+          </div>
+          <div class="jewelry7">
+            <a href="#">
+              <img src="img/sub67.jpg" alt="jewelry7">
+              <h2>7</h2>
+              <h5>피그앤헨</h5>
+              <span class="name">비셔스 빅 팔찌...</span>
+              <span class="money">99,000원</span>
+            </a>
+          </div>
+          <div class="jewelry8">
+            <a href="#">
+              <img src="img/sub68.jpg" alt="jewelry8">
+              <h2>8</h2>
+              <h5>펄리모어</h5>
+              <span class="name">제인 드롭 진주...</span>
+              <span class="money">36,800원</span>
+            </div>
+            </a>
+          <div class="jewelry9">
+            <a href="#">
+              <img src="img/sub69.jpg" alt="jewelry9">
+              <h2>9</h2>
+              <h5>아차</h5>
+              <span class="name">써지컬스틸 사각...</span>
+              <span class="money">19,000원</span>
+            </div>
+            </a>
+          <div class="jewelry0">
+            <a href="#">
+              <img src="img/sub60.jpg" alt="jewelry10">
+              <h2>10</h2>
+              <h5>논논</h5>
+              <span class="name">LOGO 2 NEC</span>
+              <span class="money">31,000원</span>
+            </div>
+            </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="figure2">
+      <div class="box_g1">
+        <img src="img/bg1.png" alt="img1">
+        <h2>STAR<br>CODISHOP</h2>
+        <p>B.T.S / SEVENTEEN / BLACKPINK / T.X.T / ITZY</p>
+      </div>
+      <div class="box_g2">
+        <img src="img/bg2.png" alt="img2">
+        <h2>BLAND<br>SHOP</h2>
+      </div>
+    </div>
+    
+    <div id="figure3">
+
+      <div class="foot_bar">
+        <h3>구매후기</h3>
+
+        <div class="reviewbox1">
+          <h6>루키 언스트럭쳐 볼캡 NY (Black)</h6>
+          <img src="img/sub31.jpg" alt="best10">
+          <p><span class="star">★★★★★</span> 4.8 | 1분 전 |  하***2</p>
+          <ul>
+            <li>사이즈 |<span> 보통이예요</span></li>
+            <li>밝기 |<span> 보통이예요</span></li>
+            <li>색감 |<span> 보통이예요</span></li>
+          </ul>
+          <p>딱 맞고 좋아요 매일 쓰고 다녀요</p>
+        </div>
+
+        <div class="reviewbox2">
+          <h6> BREAD BERET / BUBBLE SEERSUCKER / BEIGE</h6>
+          <img src="img/sub32.jpg" alt="best10">
+          <p><span class="star">★★★★☆</span> 4.2 | 5분 전 |  ti***ll</p>
+          <ul>
+            <li>사이즈 |<span> 보통이예요</span></li>
+            <li>밝기 |<span> 보통이예요</span></li>
+            <li>색감 |<span> 보통이예요</span></li>
+          </ul>
+          <p>모자 색감도 좋고 데일리로 쓰기도 편해용 이뻐요!</p>
+        </div>
+
+        <div class="reviewbox3">
+          <h6>헤리티지 코메 비니 블랙</h6>
+          <img src="img/sub33.jpg" alt="best10">
+          <p><span class="star">★★★★☆</span> 4.5 | 15분 전 |  sk*****52</p>
+          <ul>
+            <li>사이즈 |<span> 보통이예요</span></li>
+            <li>밝기 |<span> 밝아요</span></li>
+            <li>색감 |<span> 보통이예요</span></li>
+          </ul>
+          <p>이쁘고 좋아용 로고가 생각했던것보단 쪼오오끔 작네요</p>
+        </div>
+
+      </div>
+
+      <div class="foot">
+        <img src="img/footer.jpg" alt="footer">
+      </div>
+    </div>
+
+
+  </div> <!-- wrap end -->
+</body>
+</html>
